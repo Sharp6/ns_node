@@ -5,6 +5,7 @@ var urlLogin = process.env.NS_HOST + "/" + process.env.NS_APP + "/welcome";
 var username = process.env.USERNAME;
 var password = process.env.PASSWORD;
 //http://localhost:9300/amsApp/contactComp/company-search-json?searchMethod=findAllCompanys
+// To add rowsPerPage: &rowsPerPage=20
 var urlFinder = process.env.NS_HOST + "/" + process.env.NS_APP + "/" + process.env.NS_COMP + "/" + process.env.NS_DATA_EL + "-seach-json?searchMethod=findAll" + process.env.NS_DATA_EL.substr(0,1).toUpperCase() + process.env.NS_DATA_EL.substr(1) + "s";
 
 var executeFinder = function() {
